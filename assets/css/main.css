@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6{
 
 h1{
 	font-size: 3.5vw;
-	margin-bottom: 12px;
+	font-weight: 700;
 }
 
 h2{
@@ -36,6 +36,20 @@ h2{
 	padding-left: 8.33333%;
 	padding-right: 8.33333%;
 	position: relative;
+}
+
+.page__section{
+	width: 100%;
+	position: relative;
+}
+
+.page__section h1{
+	margin-bottom: 16px;
+}
+
+.page__section p{
+	color: #787774;
+	font-weight: 300;
 }
 
 .footer{
