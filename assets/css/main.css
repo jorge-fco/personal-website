@@ -1,5 +1,6 @@
 :root{
 	--color-text: #37352f;
+	--color-text-dark: #000;
 	--color-text-light: #787774;
 	--color-link: #337ea9;
 }
@@ -14,7 +15,7 @@ body{
 	width: 100%;
 	padding: 0px;
 	margin:  0px;
-	color: #37352f;
+	color: var(--color-text);
 	font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
 	font-weight: 400;
 	background-color: white;
@@ -31,7 +32,6 @@ h1, h2, h3, h4, h5, h6{
 
 h1{
 	font-size: 3.5vw;
-	font-weight: 700;
 }
 
 h2{
@@ -60,18 +60,48 @@ h2{
 }
 
 .page__section h1{
+	color: var(--color-text-dark);
 	margin-bottom: 16px;
 }
 
 .page__section h1 sup{
+	color: var(--color-text-dark);
 	font-size: 34px;
 }
 
-.page__section p{
-	color: #787774;
-	font-weight: 400;
+.page__section h2{
+	color: var(--color-text-dark);
 }
 
+.page__section span{
+	font-family: 'Space Mono', monospace;
+	color: var(--color-text-light);
+	font-size: 14px;
+	position: relative;
+}
+
+.page__section p{
+	font-size: 20px;
+	margin-top: 24px;
+	margin-bottom: 0px;
+	position: relative;
+}
+
+.page__section p a{
+	color: var(--color-text);
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+}
+
+.page__section p a:hover{
+	color: var(--color-link);
+	text-decoration: none;
+}
+
+/*
+	= FOOTER
+ */
 .footer{
 	width: 100%;
 	position: relative;
@@ -90,8 +120,9 @@ h2{
 }
 
 .footer__copyright p{
+	font-family: 'Space Mono', monospace;
 	color: var(--color-text-light);
-	font-size: 14px;
+	font-size: 12px;
 	margin: 0px;
 	padding: 0px;
 }
@@ -100,8 +131,4 @@ h2{
 	color: var(--color-text-light);
 	display: inline-block;
 	position: relative;
-}
-
-.footer__copyright a:hover{
-	color: var(--color-link);
 }
