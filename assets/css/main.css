@@ -1,0 +1,61 @@
+body{
+	width: 100%;
+	color: #37352f;
+	font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+	background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: 700;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+	position: relative;
+}
+
+h1{
+	font-size: 3.5vw;
+	margin-bottom: 12px;
+}
+
+h2{
+	font-size: 2.5vw;
+	font-weight: 500;
+}
+
+.page{
+	width: 100%;
+	padding-top: 8em;
+	padding-bottom: 8em;
+	position: relative;
+}
+
+.page__container{
+	width: 100%;
+	margin:  0 auto;
+	padding-left: 8.33333%;
+	padding-right: 8.33333%;
+	position: relative;
+}
+
+.footer{
+	width: 100%;
+	color: #787774;
+	position: relative;
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
+
+.footer p{
+	font-size: 14px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.footer a{
+	color: #787774;
+}
+
+.footer a:hover{
+	color: #337ea9;
+}
