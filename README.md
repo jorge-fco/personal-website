@@ -4,5 +4,5 @@
 - Favicon
 - Social links
 - SEO
-- Google Analytics
-- Google Site Verification
+- ✅ Google Analytics
+- ✅ Google Site Verification
