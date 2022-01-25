@@ -2,3 +2,4 @@
 
 - Social links
 - SEO
+- Google Analytics
