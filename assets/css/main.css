@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
-	font-size: 6.5vw;
+	font-size: 8.5vw;
 }
 
 h2{
@@ -66,7 +66,7 @@ h2{
 
 .page__section h1 sup{
 	color: var(--color-text-dark);
-	font-size: calc(3.5vw / 2);
+	font-size: calc(8.5vw / 2);
 }
 
 .page__section h2{
@@ -142,6 +142,10 @@ h2{
 	h2{
 		font-size: 2.5vw;
 		font-weight: 500;
+	}
+
+	.page__section h1 sup{
+		font-size: calc(3.5vw / 2);
 	}
 
 	.page__section p{
