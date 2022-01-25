@@ -31,11 +31,11 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
-	font-size: 3.5vw;
+	font-size: 6.5vw;
 }
 
 h2{
-	font-size: 2.5vw;
+	font-size: 4.5vw;
 	font-weight: 500;
 }
 
@@ -66,7 +66,7 @@ h2{
 
 .page__section h1 sup{
 	color: var(--color-text-dark);
-	font-size: 34px;
+	font-size: calc(3.5vw / 2);
 }
 
 .page__section h2{
@@ -81,7 +81,7 @@ h2{
 }
 
 .page__section p{
-	font-size: 20px;
+	font-size: 16px;
 	margin-top: 24px;
 	margin-bottom: 0px;
 	position: relative;
@@ -101,6 +101,7 @@ h2{
 
 /*
 	= FOOTER
+	--------------------------------------------------------------------------------
  */
 .footer{
 	width: 100%;
@@ -131,4 +132,19 @@ h2{
 	color: var(--color-text-light);
 	display: inline-block;
 	position: relative;
+}
+
+@media (min-width: 768px){
+	h1{
+		font-size: 3.5vw;
+	}
+
+	h2{
+		font-size: 2.5vw;
+		font-weight: 500;
+	}
+
+	.page__section p{
+		font-size: 20px;
+	}
 }
