@@ -8,3 +8,4 @@
 - ✅ Canonical
 - ✅ Google Analytics
 - ✅ Google Site Verification
+- Google Tag Manager
