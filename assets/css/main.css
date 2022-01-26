@@ -56,6 +56,34 @@ td, th {
   padding: 0;
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate__fadeIn, .footer__work p:before {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
 :root {
   --color-text:	#37352f;
   --color-text-dark:	#000;
@@ -247,4 +275,29 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-text-light);
   display: inline-block;
   position: relative;
+}
+
+.footer__work {
+  right: 45px;
+  bottom: 35px;
+  z-index: 10;
+  position: fixed;
+}
+.footer__work p {
+  color: var(--color-text-light);
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+}
+.footer__work p:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  padding: 0px;
+  border: 1px solid #00d1b2;
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: 6px;
+  position: relative;
+  background-color: #ebfffc;
 }
