@@ -2,9 +2,10 @@
 
 - ✅ Title
 - Description
-- Favicon
+- ✅ Favicon
 - Social links
 - SEO
+- ✅ Facebook APP ID
 - ✅ Canonical
 - ✅ Google Analytics
 - ✅ Google Site Verification

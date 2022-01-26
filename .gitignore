@@ -1,0 +1,8 @@
+.DS_Store
+assets/css/
+assets/scss/
+desktop.ini
+prepros.cfg
+node_modules/
+prepros.config
+prepros-6.config

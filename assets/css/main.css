@@ -1,154 +1,250 @@
-:root{
-	--color-text: #37352f;
-	--color-text-dark: #000;
-	--color-text-light: #787774;
-	--color-link: #337ea9;
+@charset "UTF-8";
+/*
+	📁 MAIN
+	👨🏻‍💻 Developer by Jorge Fco.™
+	🌐 https://jorge-fco.com/
+	©2022
+*/
+/*!
+	minireset.css v0.0.6
+	MIT License
+	github.com/jgthms/minireset.css
+*/
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
 }
 
 html {
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-	-webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-body{
-	width: 100%;
-	padding: 0px;
-	margin:  0px;
-	color: var(--color-text);
-	font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
-	font-weight: 400;
-	background-color: white;
-	-webkit-font-smoothing: antialiased;
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
-h1, h2, h3, h4, h5, h6{
-	font-weight: 700;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding: 0px;
-	position: relative;
+img, video {
+  height: auto;
+  max-width: 100%;
 }
 
-h1{
-	font-size: 8.5vw;
+iframe {
+  border: 0;
 }
 
-h2{
-	font-size: 4.5vw;
-	font-weight: 500;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.page{
-	width: 100%;
-	padding-top: 8em;
-	padding-bottom: 8em;
-	position: relative;
+td, th {
+  padding: 0;
 }
 
-.page__container{
-	width: 100%;
-	margin:  0 auto;
-	padding-left: 8.33333%;
-	padding-right: 8.33333%;
-	position: relative;
-}
-
-.page__section{
-	width: 100%;
-	position: relative;
-}
-
-.page__section h1{
-	color: var(--color-text-dark);
-	margin-bottom: 16px;
-}
-
-.page__section h1 sup{
-	color: var(--color-text-dark);
-	font-size: calc(8.5vw / 2);
-}
-
-.page__section h2{
-	color: var(--color-text-dark);
-}
-
-.page__section span{
-	font-family: 'Space Mono', monospace;
-	color: var(--color-text-light);
-	font-size: 14px;
-	position: relative;
-}
-
-.page__section p{
-	font-size: 16px;
-	margin-top: 24px;
-	margin-bottom: 0px;
-	position: relative;
-}
-
-.page__section p a{
-	color: var(--color-text);
-	display: inline-block;
-	position: relative;
-	text-decoration: none;
-}
-
-.page__section p a:hover{
-	color: var(--color-link);
-	text-decoration: none;
+:root {
+  --color-text:	#37352f;
+  --color-text-dark:	#000;
+  --color-text-light:	#787774;
+  --color-link:	#337ea9;
+  --color-link-hover:	#c14c8a;
 }
 
 /*
-	= FOOTER
-	--------------------------------------------------------------------------------
- */
-.footer{
-	width: 100%;
-	position: relative;
-	padding-top: 4em;
-	padding-bottom: 4em;
+	📁 TYPOGRAPHY
+	👨🏻‍💻 Developer by Jorge Fco.™
+	🌐 https://jorge-fco.com/
+	©2022
+*/
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
-.footer__social{
-	width: 100%;
-	position: relative;
+body {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  color: var(--color-text);
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-weight: 400;
+  background-color: white;
+  -webkit-font-smoothing: antialiased;
 }
 
-.footer__copyright{
-	width: 100%;
-	position: relative;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  position: relative;
 }
 
-.footer__copyright p{
-	font-family: 'Space Mono', monospace;
-	color: var(--color-text-light);
-	font-size: 12px;
-	margin: 0px;
-	padding: 0px;
+/*
+	📁 PAGE
+	👨🏻‍💻 Developer by Jorge Fco.™
+	🌐 https://jorge-fco.com/
+	©2022
+*/
+.page {
+  width: 100%;
+  padding-top: 8em;
+  padding-bottom: 8em;
+  position: relative;
 }
 
-.footer__copyright a{
-	color: var(--color-text-light);
-	display: inline-block;
-	position: relative;
+.page__container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 8.33333%;
+  padding-right: 8.33333%;
+  position: relative;
 }
 
-@media (min-width: 768px){
-	h1{
-		font-size: 3.5vw;
-	}
+.page__section {
+  width: 100%;
+  position: relative;
+}
+.page__section h1 {
+  font-size: 8.5vw;
+  color: var(--color-text-dark);
+  margin-bottom: 16px;
+}
+.page__section h1 sup {
+  color: var(--color-text-dark);
+  font-size: calc(8.5vw / 2);
+}
+.page__section h2 {
+  color: var(--color-text-dark);
+  font-size: 4.5vw;
+  font-weight: 500;
+}
+.page__section span {
+  font-family: "Space Mono", monospace;
+  color: var(--color-text-light);
+  font-size: 14px;
+  position: relative;
+}
+.page__section p {
+  font-size: 16px;
+  margin-top: 24px;
+  margin-bottom: 0px;
+  position: relative;
+}
+.page__section p a {
+  color: var(--color-text);
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.page__section p a:hover {
+  color: var(--color-link);
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 
-	h2{
-		font-size: 2.5vw;
-		font-weight: 500;
-	}
+@media (min-width: 768px) {
+  .page__section h1 {
+    font-size: 3.5vw;
+  }
 
-	.page__section h1 sup{
-		font-size: calc(3.5vw / 2);
-	}
+  .page__section h2 {
+    font-size: 2.5vw;
+    font-weight: 500;
+  }
 
-	.page__section p{
-		font-size: 20px;
-	}
+  .page__section h1 sup {
+    font-size: calc(3.5vw / 2);
+  }
+
+  .page__section p {
+    font-size: 20px;
+  }
+}
+/*
+	📁 MAIN CSS
+	👨🏻‍💻 Developer by Jorge Fco.™
+	🌐 https://jorge-fco.com/
+	©2022
+*/
+.footer {
+  width: 100%;
+  position: relative;
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+.footer__social {
+  width: 100%;
+  position: relative;
+}
+.footer__social ul {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.footer__social ul li {
+  position: relative;
+}
+.footer__social ul li + li {
+  margin-left: 32px;
+}
+.footer__social ul li a {
+  color: var(--color-link);
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.footer__social ul li a:hover {
+  color: var(--color-link-hover);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.footer__copyright {
+  width: 100%;
+  position: relative;
+  margin-top: 4em;
+}
+.footer__copyright p {
+  font-family: "Space Mono", monospace;
+  color: var(--color-text-light);
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+}
+.footer__copyright a {
+  color: var(--color-text-light);
+  display: inline-block;
+  position: relative;
 }
