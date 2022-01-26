@@ -1,6 +1,6 @@
 # Personal Website
 
-- Title
+- ✅ Title
 - Description
 - Favicon
 - Social links
@@ -8,4 +8,4 @@
 - ✅ Canonical
 - ✅ Google Analytics
 - ✅ Google Site Verification
-- Google Tag Manager
+- ✅ Google Tag Manager
