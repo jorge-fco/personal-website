@@ -2,8 +2,9 @@
 
 - ✅ Title
 - Description
+- Share image
 - ✅ Favicon
-- Social links
+- ✅ Social links
 - SEO
 - ✅ Facebook APP ID
 - ✅ Canonical
