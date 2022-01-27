@@ -84,6 +84,12 @@ td, th {
           animation-fill-mode: both;
 }
 
+/*
+	📁 Breakpoints
+	👨🏻‍💻 Developer by Jorge Fco.™
+	🌐 https://jorge-fco.com/
+	©2022
+*/
 :root {
   --color-text:	#37352f;
   --color-text-dark:	#000;
@@ -175,17 +181,29 @@ h1, h2, h3, h4, h5, h6 {
 .page__section p {
   font-size: 16px;
   margin-top: 0px;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   position: relative;
+}
+@media (min-width: 768px) {
+  .page__section p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
 }
 .page__section p a {
   font-family: "JetBrains Mono", monospace;
   color: var(--color-text-light);
+  font-size: 15px;
   display: inline-block;
   position: relative;
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+@media (min-width: 768px) {
+  .page__section p a {
+    font-size: 18px;
+  }
 }
 .page__section p a:hover {
   color: var(--color-link);
@@ -215,13 +233,6 @@ h1, h2, h3, h4, h5, h6 {
 
   .page__section h1 sup {
     font-size: calc(3.5vw / 2);
-  }
-
-  .page__section p {
-    font-size: 20px;
-  }
-  .page__section a {
-    font-size: 18px;
   }
 }
 /*
