@@ -162,15 +162,31 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-text-dark);
   margin-bottom: 16px;
 }
+@media (min-width: 768px) {
+  .page__section h1 {
+    font-size: 3.5vw;
+  }
+}
 .page__section h1 sup {
   color: var(--color-text-dark);
   font-size: calc(8.5vw / 2);
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  .page__section h1 sup {
+    font-size: calc(3.5vw / 2);
+  }
 }
 .page__section h2 {
   color: var(--color-text-dark);
   font-size: 4.5vw;
   font-weight: 500;
   margin-bottom: 36px;
+}
+@media (min-width: 768px) {
+  .page__section h2 {
+    font-size: 2.5vw;
+  }
 }
 .page__section span {
   font-family: "Space Mono", monospace;
@@ -221,20 +237,6 @@ h1, h2, h3, h4, h5, h6 {
   background: currentColor;
 }
 
-@media (min-width: 768px) {
-  .page__section h1 {
-    font-size: 3.5vw;
-  }
-
-  .page__section h2 {
-    font-size: 2.5vw;
-    font-weight: 500;
-  }
-
-  .page__section h1 sup {
-    font-size: calc(3.5vw / 2);
-  }
-}
 /*
 	📁 MAIN CSS
 	👨🏻‍💻 Developer by Jorge Fco.™
