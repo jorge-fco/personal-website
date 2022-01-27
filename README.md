@@ -1,7 +1,7 @@
 # Personal Website
 
 - ✅ Title
-- Description
+- ✅ Description
 - Share image
 - ✅ Favicon
 - ✅ Social links
