@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-	📁 MAIN
+	📁 Main CSS
 	👨🏻‍💻 Developer by Jorge Fco.™
 	🌐 https://jorge-fco.com/
 	©2022
@@ -85,6 +85,12 @@ td, th {
 }
 
 /*
+	📁 Mixins ––> General
+	👨🏻‍💻 Developer by Jorge Fco.™
+	🌐 https://jorge-fco.com/
+	©2022
+*/
+/*
 	📁 Breakpoints
 	👨🏻‍💻 Developer by Jorge Fco.™
 	🌐 https://jorge-fco.com/
@@ -94,8 +100,9 @@ td, th {
   --color-text:	#37352f;
   --color-text-dark:	#000;
   --color-text-light:	#787774;
-  --color-green: #00d1b2;
-  --color-green-light: #ebfffc;
+  --color-green:	#00d1b2;
+  --color-green-light:	#ebfffc;
+  --color-divider:	rgba(255, 255, 255, 0.4);
   --color-link:	#337ea9;
   --color-link-hover:	#c14c8a;
 }
@@ -107,9 +114,16 @@ td, th {
 	©2022
 */
 html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 body {
@@ -122,6 +136,7 @@ body {
   line-height: 1.5;
   background-color: white;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -141,8 +156,12 @@ h1, h2, h3, h4, h5, h6 {
 .page {
   width: 100%;
   padding-top: 8em;
-  padding-bottom: 8em;
   position: relative;
+}
+@media (min-width: 768px) {
+  .page {
+    padding-top: 12em;
+  }
 }
 
 .page__container {
@@ -238,7 +257,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*
-	📁 MAIN CSS
+	📁 Layout ––> Footer
 	👨🏻‍💻 Developer by Jorge Fco.™
 	🌐 https://jorge-fco.com/
 	©2022
@@ -306,6 +325,14 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   position: relative;
 }
+.footer__copyright address {
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  color: var(--color-text-light);
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+}
 
 .footer__work {
   right: 45px;
@@ -331,6 +358,117 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 6px;
   position: relative;
   background-color: var(--color-green);
+}
+
+.button__link {
+  font-family: "JetBrains Mono", monospace;
+  color: var(--color-text-light);
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.button__link:hover {
+  color: var(--color-link);
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.button__link:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  left: 0px;
+  bottom: -2px;
+  position: absolute;
+  background: currentColor;
+}
+
+/*
+	📁 Page ––> Home
+	👨🏻‍💻 Developer by Jorge Fco.™
+	🌐 https://jorge-fco.com/
+	©2022
+*/
+.home__services {
+  width: 100%;
+  position: relative;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  background-color: black;
+  margin-top: 12em;
+}
+
+.home__services__title {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid var(--color-divider);
+  padding-bottom: 4em;
+}
+.home__services__title h3 {
+  color: white;
+  font-size: 3.5vw;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.home__services__title p {
+  color: var(--color-text-light);
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+  width: calc(100% - 25%);
+}
+
+.home__services__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home__services__column {
+  width: 50%;
+  position: relative;
+}
+
+.home__services__list {
+  width: 100%;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.home__services__list li {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  width: 50%;
+  position: relative;
+  margin-top: 4em;
+}
+
+.home__services__link {
+  width: 100%;
+  position: relative;
+  margin-top: 6em;
 }
 
 /*

@@ -1,5 +1,10 @@
 # Personal Website
 
+## 📁 Architecture
+- Home
+
+
+## 🚀 Deploy
 - ✅ Title
 - ✅ Description
 - ✅ Share image
@@ -7,12 +12,11 @@
 - ✅ Social links
 - SEO
 - ✅ Facebook APP ID
-- Facebook Share Debugger
+- ✅ Facebook Share Debugger
 - ✅ Canonical
 - ✅ Google Analytics
 - ✅ Google Site Verification
 - ✅ Google Tag Manager
-
-
-## Deploy
+- Twitter Card Debugger
+- Linkedin Post Inspector
 - Certificate SSL
