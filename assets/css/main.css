@@ -554,10 +554,18 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 .page__error__text a {
+  color: var(--color-link);
   margin-top: 45px;
+}
+.page__error__text a:hover {
+  color: var(--color-link-hover);
+}
+.page__error__text a:hover:after {
+  color: currentColor;
 }
 .page__error__text a:after {
   content: "→";
+  color: currentColor;
   display: inline-block;
   margin-left: 12px;
 }
