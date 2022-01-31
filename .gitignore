@@ -8,6 +8,7 @@ prepros-6.config
 
 #= PAGES
 snippets/
+services.pug
 services.html
 404.pug
 

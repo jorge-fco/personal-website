@@ -2,6 +2,8 @@
 
 ## 📁 Architecture
 - Home
+- Services
+- 404
 
 ## ✅ Checklist
 - Web responsive

@@ -136,6 +136,7 @@ body {
   font-family: "Helvetica Neue", "Helvetica", sans-serif;
   font-weight: 400;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   background-color: white;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -258,6 +259,156 @@ h1, h2, h3, h4, h5, h6 {
   background: currentColor;
 }
 
+.button__link {
+  font-family: "JetBrains Mono", monospace;
+  color: var(--color-text-light);
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.button__link:hover {
+  color: var(--color-link);
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.button__link:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  left: 0px;
+  bottom: -2px;
+  position: absolute;
+  background: currentColor;
+}
+
+/*
+	📁 Layout ––> Header
+	👨🏻‍💻 Developer by Jorge Fco.™
+	🌐 https://jorge-fco.com/
+	©2022
+*/
+.header {
+  width: 100%;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header__container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 8.33333%;
+  padding-right: 8.33333%;
+}
+
+.header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__column {
+  width: 50%;
+  position: relative;
+}
+
+.header__logo {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+}
+.header__logo sup {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.header__navigation {
+  width: 100%;
+  position: relative;
+}
+.header__navigation ul {
+  width: 100%;
+  position: relative;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.header__navigation ul li {
+  position: relative;
+}
+.header__navigation ul li + li {
+  margin-left: 65px;
+}
+.header__navigation ul li a {
+  color: var(--color-text-light);
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.header__navigation ul li a:hover {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.header__navigation ul li a:hover:after {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+}
+.header__navigation ul li a:after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border: 0px;
+  border-radius: 100%;
+  left: -14px;
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
 /*
 	📁 Layout ––> Footer
 	👨🏻‍💻 Developer by Jorge Fco.™
@@ -267,8 +418,14 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
   width: 100%;
   position: relative;
-  padding-top: 6em;
+  padding-top: calc(6em - 32px);
   padding-bottom: 6em;
+}
+@media (min-width: 768px) {
+  .footer {
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
 }
 
 .footer__social {
@@ -292,22 +449,75 @@ h1, h2, h3, h4, h5, h6 {
           flex-direction: row;
 }
 .footer__social ul li {
+  width: 50%;
+  margin-top: 32px;
   position: relative;
 }
+@media (min-width: 768px) {
+  .footer__social ul li {
+    width: auto;
+    margin-top: 0px;
+  }
+}
 .footer__social ul li + li {
-  margin-left: 32px;
+  margin-left: 0px;
+}
+@media (min-width: 768px) {
+  .footer__social ul li + li {
+    margin-left: 32px;
+  }
 }
 .footer__social ul li a {
   color: var(--color-link);
+  font-size: 16px;
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+@media (min-width: 768px) {
+  .footer__social ul li a {
+    font-size: 18px;
+  }
 }
 .footer__social ul li a:hover {
   color: var(--color-link-hover);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
+}
+.footer__social ul li a:hover:after {
+  color: currentColor;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.footer__social ul li a:hover:before {
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: currentColor;
+}
+.footer__social ul li a:before {
+  content: "";
+  width: 0%;
+  height: 1px;
+  left: 0px;
+  bottom: 0px;
+  position: absolute;
+  background-color: currentColor;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.footer__social ul li a:after {
+  content: "→";
+  color: currentColor;
+  display: inline-block;
+  position: relative;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .footer__copyright {
@@ -362,31 +572,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--color-green);
 }
 
-.button__link {
-  font-family: "JetBrains Mono", monospace;
-  color: var(--color-text-light);
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.button__link:hover {
-  color: var(--color-link);
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.button__link:before {
-  content: "";
-  width: 100%;
-  height: 1px;
-  left: 0px;
-  bottom: -2px;
-  position: absolute;
-  background: currentColor;
-}
-
 /*
 	📁 Page ––> Home
 	👨🏻‍💻 Developer by Jorge Fco.™
@@ -399,7 +584,14 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 6em;
   padding-bottom: 6em;
   background-color: black;
-  margin-top: 12em;
+  margin-top: 8em;
+}
+@media (min-width: 768px) {
+  .home__services {
+    padding-top: 10em;
+    padding-bottom: 10em;
+    margin-top: 12em;
+  }
 }
 
 .home__services__title {
@@ -410,36 +602,50 @@ h1, h2, h3, h4, h5, h6 {
 }
 .home__services__title h3 {
   color: white;
-  font-size: 3.5vw;
+  font-size: 6.5vw;
   font-weight: 500;
   margin-bottom: 16px;
 }
+@media (min-width: 768px) {
+  .home__services__title h3 {
+    font-size: 4.5vw;
+  }
+}
 .home__services__title p {
   color: var(--color-text-light);
-  font-size: 16px;
+  font-size: 18px;
   margin: 0px;
   padding: 0px;
   width: calc(100% - 25%);
 }
 
 .home__services__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
+@media (min-width: 768px) {
+  .home__services__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 
 .home__services__column {
-  width: 50%;
+  width: 100%;
   position: relative;
+}
+@media (min-width: 768px) {
+  .home__services__column {
+    width: 50%;
+  }
 }
 
 .home__services__list {
@@ -460,11 +666,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .home__services__list li {
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   width: 50%;
   position: relative;
   margin-top: 4em;
+}
+@media (min-width: 768px) {
+  .home__services__list li {
+    font-size: 20px;
+  }
 }
 
 .home__services__link {
@@ -518,11 +729,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .page__error__title h1 {
   color: white;
-  font-size: 6.5vw;
+  font-size: 8.5vw;
   font-weight: 500;
   margin: 0px;
   padding: 0px;
   line-height: 1.2;
+}
+@media (min-width: 768px) {
+  .page__error__title h1 {
+    font-size: 6.5vw;
+  }
 }
 .page__error__title h1 span {
   color: var(--color-text-light);
