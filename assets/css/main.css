@@ -102,6 +102,8 @@ td, th {
   --color-text-light:	#787774;
   --color-green:	#00d1b2;
   --color-green-light:	#ebfffc;
+  --color-blue:	#00d1b2;
+  --color-body-dark:	#000;
   --color-divider:	rgba(255, 255, 255, 0.4);
   --color-link:	#337ea9;
   --color-link-hover:	#c14c8a;
@@ -477,3 +479,85 @@ h1, h2, h3, h4, h5, h6 {
 	🌐 https://jorge-fco.com/
 	©2022
 */
+/*
+	📁 Page ––> 404
+	👨🏻‍💻 Developer by Jorge Fco.™
+	🌐 https://jorge-fco.com/
+	©2022
+*/
+.page__error__body {
+  background-color: var(--color-body-dark);
+}
+
+.page__error {
+  width: 100%;
+  position: relative;
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+@media (min-width: 768px) {
+  .page__error {
+    padding-top: 10em;
+    padding-bottom: 10em;
+  }
+}
+
+.page__error__section {
+  width: 100%;
+  position: relative;
+}
+
+.page__error__information {
+  width: 100%;
+  position: relative;
+}
+
+.page__error__title {
+  width: 100%;
+  position: relative;
+}
+.page__error__title h1 {
+  color: white;
+  font-size: 6.5vw;
+  font-weight: 500;
+  margin: 0px;
+  padding: 0px;
+  line-height: 1.2;
+}
+.page__error__title h1 span {
+  color: var(--color-text-light);
+  font-weight: 700;
+  display: block;
+  position: relative;
+}
+.page__error__title h1 span:before {
+  content: "•";
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  margin-right: 12px;
+}
+
+.page__error__text {
+  width: 100%;
+  position: relative;
+  margin-top: 35px;
+  padding-left: 8.33333%;
+}
+.page__error__text p {
+  color: var(--color-text-light);
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.page__error__text p span {
+  display: block;
+  position: relative;
+}
+.page__error__text a {
+  margin-top: 45px;
+}
+.page__error__text a:after {
+  content: "→";
+  display: inline-block;
+  margin-left: 12px;
+}

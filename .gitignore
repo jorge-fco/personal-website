@@ -1,9 +1,16 @@
+#= FILES
 .DS_Store
-assets/css/
-assets/scss/
 desktop.ini
 prepros.cfg
 node_modules/
 prepros.config
 prepros-6.config
+
+#= PAGES
+snippets/
 services.html
+404.pug
+
+#= CSS
+assets/css/
+assets/scss/
