@@ -14,6 +14,7 @@
 - Favicon
 - Canonical
 - SEO
+- Geo tags
 
 ## 🚀 Deploy
 - Google Analytics
