@@ -7,10 +7,10 @@ prepros.config
 prepros-6.config
 
 #= PAGES
+*.pug
 snippets/
-services.pug
+sections/
 services.html
-404.pug
 
 #= CSS
 assets/css/

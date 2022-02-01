@@ -5,6 +5,60 @@
 	🌐 https://jorge-fco.com/
 	©2022
 */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate__fadeIn, .footer__work p:before {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+/*
+	📁 Mixins ––> General
+	👨🏻‍💻 Developer by Jorge Fco.™
+	🌐 https://jorge-fco.com/
+	©2022
+*/
+/*
+	📁 Breakpoints
+	👨🏻‍💻 Developer by Jorge Fco.™
+	🌐 https://jorge-fco.com/
+	©2022
+*/
+:root {
+  --color-text:	#37352f;
+  --color-text-dark:	#000;
+  --color-text-light:	#787774;
+  --color-green:	#00d1b2;
+  --color-green-light:	#ebfffc;
+  --color-blue:	#00d1b2;
+  --color-body-dark:	#000;
+  --color-divider:	rgba(255, 255, 255, 0.4);
+  --color-link:	#337ea9;
+  --color-link-hover:	#c14c8a;
+  --color-selection-text: #000;
+  --color-selection-background: #F6B210;
+}
+
 /*!
 	minireset.css v0.0.6
 	MIT License
@@ -56,61 +110,8 @@ td, th {
   padding: 0;
 }
 
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.animate__fadeIn, .footer__work p:before {
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
 /*
-	📁 Mixins ––> General
-	👨🏻‍💻 Developer by Jorge Fco.™
-	🌐 https://jorge-fco.com/
-	©2022
-*/
-/*
-	📁 Breakpoints
-	👨🏻‍💻 Developer by Jorge Fco.™
-	🌐 https://jorge-fco.com/
-	©2022
-*/
-:root {
-  --color-text:	#37352f;
-  --color-text-dark:	#000;
-  --color-text-light:	#787774;
-  --color-green:	#00d1b2;
-  --color-green-light:	#ebfffc;
-  --color-blue:	#00d1b2;
-  --color-body-dark:	#000;
-  --color-divider:	rgba(255, 255, 255, 0.4);
-  --color-link:	#337ea9;
-  --color-link-hover:	#c14c8a;
-}
-
-/*
-	📁 TYPOGRAPHY
+	📁 Typography
 	👨🏻‍💻 Developer by Jorge Fco.™
 	🌐 https://jorge-fco.com/
 	©2022
@@ -150,113 +151,14 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-/*
-	📁 PAGE
-	👨🏻‍💻 Developer by Jorge Fco.™
-	🌐 https://jorge-fco.com/
-	©2022
-*/
-.page {
-  width: 100%;
-  padding-top: 8em;
-  position: relative;
-}
-@media (min-width: 768px) {
-  .page {
-    padding-top: 12em;
-  }
+::-moz-selection {
+  color: var(--color-selection-text);
+  background-color: var(--color-selection-background);
 }
 
-.page__container {
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 8.33333%;
-  padding-right: 8.33333%;
-  position: relative;
-}
-
-.page__section {
-  width: 100%;
-  position: relative;
-}
-.page__section h1 {
-  font-size: 8.5vw;
-  color: var(--color-text-dark);
-  margin-bottom: 16px;
-}
-@media (min-width: 768px) {
-  .page__section h1 {
-    font-size: 3.5vw;
-  }
-}
-.page__section h1 sup {
-  color: var(--color-text-dark);
-  font-size: calc(8.5vw / 2);
-  font-weight: 500;
-}
-@media (min-width: 768px) {
-  .page__section h1 sup {
-    font-size: calc(3.5vw / 2);
-  }
-}
-.page__section h2 {
-  color: var(--color-text-dark);
-  font-size: 4.5vw;
-  font-weight: 500;
-  margin-bottom: 36px;
-}
-@media (min-width: 768px) {
-  .page__section h2 {
-    font-size: 2.5vw;
-  }
-}
-.page__section span {
-  font-family: "Space Mono", monospace;
-  color: var(--color-text-light);
-  font-size: 14px;
-  position: relative;
-}
-.page__section p {
-  font-size: 16px;
-  margin-top: 0px;
-  margin-bottom: 14px;
-  position: relative;
-}
-@media (min-width: 768px) {
-  .page__section p {
-    font-size: 20px;
-    margin-bottom: 12px;
-  }
-}
-.page__section p a {
-  font-family: "JetBrains Mono", monospace;
-  color: var(--color-text-light);
-  font-size: 15px;
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-@media (min-width: 768px) {
-  .page__section p a {
-    font-size: 18px;
-  }
-}
-.page__section p a:hover {
-  color: var(--color-link);
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.page__section p a:before {
-  content: "";
-  width: 100%;
-  height: 1px;
-  left: 0px;
-  bottom: -2px;
-  position: absolute;
-  background: currentColor;
+::selection {
+  color: var(--color-selection-text);
+  background-color: var(--color-selection-background);
 }
 
 .button__link {
@@ -547,10 +449,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer__work {
-  right: 45px;
-  top: 35px;
+  right: 25px;
+  top: 25px;
   z-index: 10;
   position: fixed;
+}
+@media (min-width: 768px) {
+  .footer__work {
+    right: 35px;
+    top: 35px;
+  }
 }
 .footer__work p {
   font-family: "JetBrains Mono", monospace;
@@ -578,19 +486,128 @@ h1, h2, h3, h4, h5, h6 {
 	🌐 https://jorge-fco.com/
 	©2022
 */
+.home {
+  width: 100%;
+  position: relative;
+}
+
+.page__container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 8.33333%;
+  padding-right: 8.33333%;
+  position: relative;
+}
+
+.home__section {
+  width: 100%;
+  position: relative;
+  padding-top: 8em;
+  padding-bottom: 8em;
+}
+@media (min-width: 768px) {
+  .home__section {
+    padding-top: 12em;
+    padding-bottom: 12em;
+  }
+}
+.home__section h1 {
+  font-size: 8.5vw;
+  color: var(--color-text-dark);
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .home__section h1 {
+    font-size: 3.5vw;
+  }
+}
+.home__section h1 sup {
+  color: var(--color-text-dark);
+  font-size: calc(8.5vw / 2);
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  .home__section h1 sup {
+    font-size: calc(3.5vw / 2);
+  }
+}
+.home__section h2 {
+  color: var(--color-text-dark);
+  font-size: 4.5vw;
+  font-weight: 500;
+  margin-bottom: 36px;
+}
+@media (min-width: 768px) {
+  .home__section h2 {
+    font-size: 2.5vw;
+  }
+}
+.home__section span {
+  font-family: "Space Mono", monospace;
+  color: var(--color-text-light);
+  font-size: 14px;
+  position: relative;
+}
+.home__section p {
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 14px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .home__section p {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+}
+.home__section p a {
+  font-family: "JetBrains Mono", monospace;
+  color: var(--color-text-light);
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media (min-width: 768px) {
+  .home__section p a {
+    font-size: 18px;
+  }
+}
+.home__section p a:hover {
+  color: var(--color-link);
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.home__section p a:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  left: 0px;
+  bottom: -2px;
+  position: absolute;
+  background: currentColor;
+}
+
+/*
+	📁 Page ––> Services
+	👨🏻‍💻 Developer by Jorge Fco.™
+	🌐 https://jorge-fco.com/
+	©2022
+*/
 .home__services {
   width: 100%;
   position: relative;
   padding-top: 6em;
   padding-bottom: 6em;
   background-color: black;
-  margin-top: 8em;
 }
 @media (min-width: 768px) {
   .home__services {
     padding-top: 10em;
     padding-bottom: 10em;
-    margin-top: 12em;
   }
 }
 
@@ -613,10 +630,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .home__services__title p {
   color: var(--color-text-light);
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 1.6;
   margin: 0px;
   padding: 0px;
-  width: calc(100% - 25%);
+}
+@media (min-width: 768px) {
+  .home__services__title p {
+    font-size: 18px;
+    width: calc(100% - 25%);
+  }
 }
 
 .home__services__row {
@@ -665,16 +688,23 @@ h1, h2, h3, h4, h5, h6 {
           flex-direction: row;
 }
 .home__services__list li {
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
   width: 50%;
   position: relative;
   margin-top: 4em;
 }
+.home__services__list li p {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  border-radius: 50px;
+  border: 1px solid white;
+  padding: 10px 20px;
+  position: relative;
+}
 @media (min-width: 768px) {
-  .home__services__list li {
-    font-size: 20px;
+  .home__services__list li p {
+    font-size: 18px;
   }
 }
 
@@ -684,12 +714,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 6em;
 }
 
-/*
-	📁 PAGE ––> Services
-	👨🏻‍💻 Developer by Jorge Fco.™
-	🌐 https://jorge-fco.com/
-	©2022
-*/
 /*
 	📁 Page ––> 404
 	👨🏻‍💻 Developer by Jorge Fco.™
