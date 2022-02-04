@@ -957,6 +957,14 @@ svg {
   margin: 0px;
   padding: 0px;
 }
+.home__services__title p + p {
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  .home__services__title p + p {
+    margin-top: 0px;
+  }
+}
 @media (min-width: 768px) {
   .home__services__title p {
     font-size: 18px;
@@ -1039,11 +1047,11 @@ svg {
   color: var(--color-link-hover);
 }
 .home__services__link a:hover:after {
-  color: currentColor;
+  color: var(--color-link-hover);
 }
 .home__services__link a:after {
   content: "→";
-  color: currentColor;
+  color: var(--color-text-light);
   display: inline-block;
   margin-left: 12px;
 }
