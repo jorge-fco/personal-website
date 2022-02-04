@@ -1035,6 +1035,18 @@ svg {
   position: relative;
   margin-top: 6em;
 }
+.home__services__link a:hover {
+  color: var(--color-link-hover);
+}
+.home__services__link a:hover:after {
+  color: currentColor;
+}
+.home__services__link a:after {
+  content: "→";
+  color: currentColor;
+  display: inline-block;
+  margin-left: 12px;
+}
 
 /*
 	📁 Page ––> 404

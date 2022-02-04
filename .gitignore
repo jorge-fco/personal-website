@@ -10,7 +10,6 @@ prepros-6.config
 *.pug
 snippets/
 sections/
-services.html
 
 #= CSS
 assets/css/
