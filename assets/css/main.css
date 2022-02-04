@@ -761,23 +761,38 @@ svg {
   color: var(--color-text-light);
   font-family: "Source Code Pro", monospace;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0px;
   padding: 0px;
 }
+@media (min-width: 768px) {
+  .services__title p {
+    font-size: 16px;
+  }
+}
 .services__title h1 {
   color: var(--color-text-dark);
-  font-size: 64px;
+  font-size: 44px;
   font-weight: 500;
   margin-top: 0px;
   margin-bottom: 16px;
 }
+@media (min-width: 768px) {
+  .services__title h1 {
+    font-size: 64px;
+  }
+}
 .services__title h2 {
   color: var(--color-text-dark);
-  font-size: 44px;
+  font-size: 34px;
   font-weight: 400;
   margin: 0px;
   padding: 0px;
+}
+@media (min-width: 768px) {
+  .services__title h2 {
+    font-size: 44px;
+  }
 }
 
 .list__services {
@@ -822,9 +837,14 @@ svg {
 }
 .list__services__item h3 {
   color: var(--color-text-dark);
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 500;
   margin-bottom: 12px;
+}
+@media (min-width: 768px) {
+  .list__services__item h3 {
+    font-size: 32px;
+  }
 }
 .list__services__item h3 sup {
   color: var(--color-text-light);
@@ -838,11 +858,16 @@ svg {
 }
 .list__services__item p {
   color: var(--color-text-light);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
   margin: 0px;
   padding: 0px;
+}
+@media (min-width: 768px) {
+  .list__services__item p {
+    font-size: 18px;
+  }
 }
 .list__services__item p + p {
   margin-top: 16px;
