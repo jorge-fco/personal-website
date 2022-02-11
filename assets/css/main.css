@@ -796,7 +796,7 @@ svg {
 }
 
 .list__services {
-  width: calc(100% - 25%);
+  width: calc(100% - 8.33333%);
   list-style: none;
   margin: 0px;
   padding-top: 0px;
