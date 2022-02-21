@@ -366,6 +366,68 @@ svg {
   opacity: 0;
   visibility: hidden;
 }
+.header__navigation ul li button {
+  cursor: pointer;
+  width: 34px;
+  height: 34px;
+  margin: 0px;
+  border: 0px;
+  display: block;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  display: none;
+}
+.header__navigation ul li button:hover {
+  border: 0px;
+  background-color: white;
+}
+.header__navigation ul li button:hover span:after {
+  width: 90%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.header__navigation ul li button:hover span:before {
+  width: 80%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.header__navigation ul li button span {
+  width: 100%;
+  height: 2px;
+  right: 0px;
+  top: 50%;
+  display: block;
+  position: absolute;
+  background-color: black;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.header__navigation ul li button span:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  right: 0px;
+  top: 8px;
+  display: block;
+  position: absolute;
+  background-color: black;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.header__navigation ul li button span:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  right: 0px;
+  top: -8px;
+  display: block;
+  position: absolute;
+  background-color: black;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 
 /*
 	📁 Layout ––> Footer
@@ -782,6 +844,9 @@ svg {
   line-height: 1.6;
   margin: 0px;
 }
+.service__text--format em, .service__information p em, .service__introduction p em {
+  font-style: italic;
+}
 @media (min-width: 768px) {
   .service__text--format, .service__information p, .service__introduction p {
     font-size: 20px;
@@ -976,7 +1041,7 @@ svg {
   margin-bottom: 4em;
 }
 .service__information h4 {
-  color: var(--color-text);
+  color: var(--color-text-dark);
   font-weight: 500;
   font-size: 26px;
   margin-top: 2em;
@@ -1081,6 +1146,65 @@ svg {
 }
 .service__information__items li + li {
   border-top: 1px solid var(--color-divider);
+}
+
+.service__information__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 32px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 32px;
+  grid-row-gap: 64px;
+  margin-top: 32px;
+}
+
+.service__information__item {
+  position: relative;
+  display: block;
+  -ms-grid-column-span: 6;
+  grid-column-end: span 6;
+}
+
+.service__information__icon {
+  width: 100%;
+  position: relative;
+  margin-bottom: 12px;
+}
+.service__information__icon svg {
+  width: 32px;
+  max-height: 32px;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  stroke-width: 1;
+  stroke: var(--color-text);
+  fill: none;
+  stroke-linejoin: arcs;
+  stroke-linecap: square;
+  fill-rule: evenodd;
+}
+.service__information__icon svg.service__information__icon__outline {
+  fill: var(--color-text);
+  stroke: transparent;
+}
+
+.service__information__name {
+  width: 100%;
+  position: relative;
+}
+.service__information__name h5 {
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .service__information__name h5 {
+    font-size: 18px;
+  }
 }
 
 .service__back {

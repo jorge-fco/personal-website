@@ -13,5 +13,8 @@ snippets/
 sections/
 
 #= CSS
-assets/css/
-assets/scss/
+assets/css/*
+assets/scss/*
+
+# = JS
+assets/js/*
