@@ -8,7 +8,10 @@ prepros-6.config
 
 #= PAGES
 *.pug
+template.html
 service.html
+components/
+config/
 snippets/
 sections/
 
