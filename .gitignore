@@ -10,8 +10,8 @@ prepros-6.config
 *.pug
 template.html
 service.html
-landingpage.html
 components/
+pages/
 config/
 snippets/
 sections/
