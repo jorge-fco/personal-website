@@ -10,7 +10,6 @@ prepros-6.config
 *.pug
 template.html
 service.html
-domain.html
 components/
 pages/
 config/
