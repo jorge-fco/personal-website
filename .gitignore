@@ -8,6 +8,7 @@ prepros-6.config
 
 #= PAGES
 *.pug
+email.html
 template.html
 service.html
 components/
