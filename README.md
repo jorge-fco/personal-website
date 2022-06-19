@@ -1,9 +1,15 @@
 # Personal Website
 
 ## 📁 Architecture
-- Home
-- Services
-- 404
+- 1.- Home
+- 2.- Services
+- 3.- About me
+- 4.- Glosary
+	- Conekta
+	- Checkout
+	- Payments
+- 5.- Privacy
+- 6.- 404
 
 ## ✅ Checklist
 - Web responsive
