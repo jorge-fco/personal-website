@@ -5,9 +5,15 @@
 - 2.- Services
 - 3.- About me
 - 4.- Glosary
-	- Conekta
+	- Analytics
 	- Checkout
+	- Conekta
+	- Cookies
+	- Ecommerce
+	- Newsletter
 	- Payments
+	- WhatsApp
+	- Wireframe
 - 5.- Privacy
 - 6.- 404
 
