@@ -1,10 +1,10 @@
 # 👨🏻‍💻 Personal Website
 
 ## 📦 Architecture
-- 1.- Home
-- 2.- Services
-- 3.- About me
-- 4.-  📁 Glosary
+- **1.-** Home
+- **2.-** Services
+- **3.-** About me
+- **4.-**  📁 Glosary
 	- Analytics
 	- Checkout
 	- Conekta
@@ -14,8 +14,8 @@
 	- Payments
 	- WhatsApp
 	- Wireframe
-- 5.- Privacy
-- 6.- 404
+- **5.-** Privacy
+- **6.-** 404
 
 ## ✅ Checklist
 - [ ] Web responsive
