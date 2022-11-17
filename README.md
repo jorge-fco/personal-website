@@ -1,10 +1,10 @@
-# Personal Website
+# 👨🏻‍💻 Personal Website
 
-## 📁 Architecture
+## 📦 Architecture
 - 1.- Home
 - 2.- Services
 - 3.- About me
-- 4.- Glosary
+- 4.-  📁 Glosary
 	- Analytics
 	- Checkout
 	- Conekta
@@ -18,25 +18,25 @@
 - 6.- 404
 
 ## ✅ Checklist
-- Web responsive
-- Social links
-- Title
-- Description
-- Share image
-- Favicon
-- Canonical
-- SEO
-- Geo tags
+- [ ] Web responsive
+- [ ] Social links
+- [ ] Title
+- [ ] Description
+- [ ] Share image
+- [ ] Favicon
+- [ ] Canonical
+- [ ] SEO
+- [ ] Geo tags
 
 ## 🚀 Deploy
-- Google Analytics
-- Google Search Console
-- Google Site Verification
-- Google Tag Manager
-- Google My Business
-- Facebook App ID
-- Twitter Card Debugger
-- Linkedin Post Inspector
-- Facebook Share Debugger
-- Certificate SSL
-- PageSpeed Insights
+- [ ] Google Analytics
+- [ ] Google Search Console
+- [ ] Google Site Verification
+- [ ] Google Tag Manager
+- [ ] Google My Business
+- [ ] Facebook App ID
+- [ ] Twitter Card Debugger
+- [ ] Linkedin Post Inspector
+- [ ] Facebook Share Debugger
+- [ ] Certificate SSL
+- [ ] PageSpeed Insights
