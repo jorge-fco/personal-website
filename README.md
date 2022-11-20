@@ -27,6 +27,7 @@
 - [ ] Canonical
 - [ ] SEO
 - [ ] Geo tags
+- [ ] Cookies
 
 ## 🚀 Deploy
 - [ ] Google Analytics
