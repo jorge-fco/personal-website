@@ -5,7 +5,9 @@
 - **2.-** Services
 - **3.-** About me
 - **4.-** Workflow
-- **5.-**  📁 Glosary
+- **5.-** Privacy
+- **6.-** 404
+- **7.-**  📁 Glosary
 	- Analytics
 	- Checkout
 	- Conekta
@@ -15,8 +17,12 @@
 	- Payments
 	- WhatsApp
 	- Wireframe
-- **6.-** Privacy
-- **7.-** 404
+- **8.-** Blog
+	- Metafields
+	- Shopify
+	- Website
+	- Hosting
+
 
 ## Layout
 - Navigation
