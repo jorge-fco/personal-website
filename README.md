@@ -18,6 +18,11 @@
 - **6.-** Privacy
 - **7.-** 404
 
+## Layout
+- Navigation
+- Footer
+- Menu
+
 ## ✅ Checklist
 - [ ] Web responsive
 - [ ] Social links
