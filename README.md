@@ -4,7 +4,8 @@
 - **1.-** Home
 - **2.-** Services
 - **3.-** About me
-- **4.-**  📁 Glosary
+- **4.-** Workflow
+- **5.-**  📁 Glosary
 	- Analytics
 	- Checkout
 	- Conekta
@@ -14,8 +15,8 @@
 	- Payments
 	- WhatsApp
 	- Wireframe
-- **5.-** Privacy
-- **6.-** 404
+- **6.-** Privacy
+- **7.-** 404
 
 ## ✅ Checklist
 - [ ] Web responsive
