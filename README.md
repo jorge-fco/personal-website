@@ -9,13 +9,12 @@
 - **6.-** 404
 - **7.-**  📁 Glosary
 	- 1.- Analytics
-	- Checkout
-	- Conekta
-	- 3.- Cookies
-	- Ecommerce
-	- Newsletter
-	- Payments
-	- WhatsApp
+	- 2.- Checkout
+	- 3.- Conekta
+	- 4.- Cookies
+	- 5.- Ecommerce
+	- 6.- Newsletter
+	- 7.- Payments
 	- Wireframe
 - **8.-** Blog
 	- Metafields
@@ -23,6 +22,7 @@
 	- Website
 	- Hosting
 	- Certificado SSL
+	- WhatsApp
 
 
 ## Layout
