@@ -8,7 +8,7 @@
 - **5.-** Privacy
 - **6.-** 404
 - **7.-**  📁 Glosary
-	- Analytics
+	- 1.- Analytics
 	- Checkout
 	- Conekta
 	- Cookies
