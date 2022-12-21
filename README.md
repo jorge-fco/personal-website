@@ -22,6 +22,7 @@
 	- Shopify
 	- Website
 	- Hosting
+	- Certificado SSL
 
 
 ## Layout
