@@ -15,12 +15,13 @@
 	- 5.- Ecommerce
 	- 6.- Newsletter
 	- 7.- Payments
-	- Wireframe
+	- 8.- Wireframe
 - **8.-** Blog
 	- Metafields
 	- Shopify
 	- Website
 	- Hosting
+	- Dominio
 	- Certificado SSL
 	- WhatsApp
 
