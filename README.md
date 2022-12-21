@@ -11,7 +11,7 @@
 	- 1.- Analytics
 	- Checkout
 	- Conekta
-	- Cookies
+	- 3.- Cookies
 	- Ecommerce
 	- Newsletter
 	- Payments
