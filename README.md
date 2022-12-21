@@ -7,7 +7,7 @@
 - **4.-** Workflow
 - **5.-** Privacy
 - **6.-** 404
-- **7.-**  📁 Glosary
+- **7.-**  📁 **Glosary**
 	- 1.- Analytics
 	- 2.- Checkout
 	- 3.- Conekta
@@ -16,14 +16,14 @@
 	- 6.- Newsletter
 	- 7.- Payments
 	- 8.- Wireframe
-- **8.-** Blog
-	- Metafields
-	- Shopify
-	- Website
-	- Hosting
-	- Dominio
-	- Certificado SSL
-	- WhatsApp
+- **8.-** 📁 **Blog**
+	- 1.- Metafields
+	- 2.- Shopify
+	- 3.- Website
+	- 4.- Hosting
+	- 5.- Dominio
+	- 6.- Certificado SSL
+	- 7.- WhatsApp
 
 
 ## Layout
