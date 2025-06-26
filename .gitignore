@@ -11,11 +11,12 @@ prepros-6.config
 email.html
 template.html
 service.html
+contact.html
 components/
 pages/
 config/
 snippets/
-sections/
+backup/*
 
 #= CSS
 assets/css/*
