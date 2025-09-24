@@ -13,6 +13,7 @@ template.html
 service.html
 contact.html
 privacy.html
+portfolio.html
 components/
 pages/
 config/
@@ -22,6 +23,7 @@ backup/*
 #= CSS
 assets/css/*
 assets/scss/*
+assets/dist/main.min.css.map
 
 # = JS
 assets/js/*
